@@ -1,83 +1,41 @@
-const skills = [
-  "React",
-  "TypeScript",
-  "Python",
-  "Node.js",
-  "SQL",
-  "Machine Learning",
-  "NLP",
-  "Data Analysis",
-  "Figma",
-  "UI/UX",
-  "Git",
-  "Linux",
-];
+import type { Project } from "../data/projects";
 
-const About = () => {
+type Props = {
+  project: Project;
+  index: number;
+};
+
+const ProjectCard = ({ project, index }: Props) => {
   return (
-    <section id="about" className="about-section">
-      {/* LEFT */}
-      <div className="about-left">
-        <p className="sec-eyebrow">My Story</p>
-        <h2 className="sec-title about-title">About</h2>
-        <div className="about-copy">
-          <p>
-            Étudiant en <strong>Bachelor Informatique &amp; Tech</strong>, je
-            suis passionné par la création d'interfaces modernes et par tout ce
-            qui touche à la <strong>data et l'intelligence artificielle</strong>
-            .
-          </p>
-          <p>
-            J'aime comprendre comment les données peuvent améliorer les
-            expériences utilisateurs — du chatbot NLP au dashboard analytique.
-          </p>
-          <p>
-            Curieux et autonome, je développe mes compétences en{" "}
-            <strong>React, Python et Machine Learning</strong> en parallèle de
-            ma formation.
-          </p>
+    <div className="project-row">
+      <div className="proj-left">
+        <div className="proj-num">0{index}</div>
+        <span
+          className={`proj-badge ${project.status === "wip" ? "wip" : "done"}`}
+        >
+          {project.status === "wip" ? "En cours" : "Complété"}
+        </span>
+        <p className="proj-client">{project.client}</p>
+        <h3 className="proj-title">{project.title}</h3>
+        <div className="proj-tags">
+          {project.tags.map((tag) => (
+            <span key={tag} className="proj-tag">
+              {tag}
+            </span>
+          ))}
         </div>
-        <a href="/Daniel Sosa Merino.pdf" download className="btn-outline">
-          Download CV ↓
-        </a>
+        <p className="proj-desc">{project.description}</p>
       </div>
-
-      {/* RIGHT */}
-      <div className="about-right">
-        <p className="sec-eyebrow">Experience</p>
-        <div className="exp-list">
-          <div className="exp-row">
-            <div>
-              <div className="exp-title">Bachelor Informatique &amp; Tech</div>
-              <div className="exp-sub">EPITECH / École — 1ère année</div>
-            </div>
-            <div className="exp-date">formation 2025–2026</div>
-          </div>
-          <a href="#projects" className="exp-row exp-link">
-            <div>
-              <div className="exp-title">
-                Projets académiques{" "}
-                <span className="exp-link-label">↓ voir</span>
-              </div>
-              <div className="exp-sub">Chatbot, Full-Stack, Portfolio</div>
-            </div>
-            <div className="exp-date">2025 — 2026</div>
-          </a>
+      <div className="proj-right">
+        <div className="proj-placeholder">
+          {project.image && (
+            <img src={project.image} alt="{`img ${project.title}`}" />
+          )}
         </div>
-
-        <div className="skills-wrap">
-          <p className="skills-label">Skills</p>
-          <div className="chips">
-            {skills.map((s) => (
-              <span key={s} className="chip">
-                {s}
-              </span>
-            ))}
-          </div>
-        </div>
+        <div className="proj-arrow">↗</div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default About;
+export default ProjectCard;

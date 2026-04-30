@@ -488,7 +488,7 @@ section {
 }
 .contact-big {
   font-family: "Syne", sans-serif;
-  font-size: clamp(56px, 9vw, 140px);
+  font-size: clamp(50px, 5vw, 140px);
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 0.9;

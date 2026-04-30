@@ -18,7 +18,9 @@ const Hero = () => {
             <span className="badge-dot pulse"></span>
             Disponible
           </span>
-          <span className="badge">Bachelor Informatique Tech · Paris</span>
+          <span className="badge">
+            Bachelor Informatique &amp; Tech · Paris
+          </span>
         </div>
       </div>
     </section>

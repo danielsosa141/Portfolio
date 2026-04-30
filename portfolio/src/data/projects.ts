@@ -1,9 +1,12 @@
+import elizaImg from "../assets/eliza.png";
+
 export type Project = {
   id: number;
   title: string;
   client: string;
   status: "completed" | "wip";
   tags: string[];
+  image?: string;
   description: string;
 };
 
@@ -14,6 +17,7 @@ export const projects: Project[] = [
     client: "Bachelor Informatique & Tech · 2025–2026",
     status: "completed",
     tags: ["Python", "NLP", "LLM", "Business Plan"],
+    image: elizaImg,
     description:
       "Chatbot assistant pour salles de sport : analyse des besoins métier, business plan, modèle SaaS, calcul ROI/KPIs et évaluation éthique. Landing page promotionnelle.",
   },
@@ -23,6 +27,7 @@ export const projects: Project[] = [
     client: "Bachelor Informatique & Tech · 2025–2026",
     status: "completed",
     tags: ["Python", "Machine Learning", "Data Analysis", "scikit-learn"],
+    image: "",
     description:
       "Perspectives commerciales d'un supermarché. Analyses prédictive, explicative, descriptive et prescriptive. Construction de modèles prédictifs et compréhension des tendances comportementales.",
   },
@@ -32,6 +37,7 @@ export const projects: Project[] = [
     client: "Bachelor Informatique & Tech · 2025–2026",
     status: "completed",
     tags: ["Python", "NLP", "TF-IDF", "LDA", "NER"],
+    image: "",
     description:
       "Outil CLI d'analyse de livres (Project Gutenberg) : diversité lexicale, topic modeling, reconnaissance d'entités, résumé automatique et similarité entreouvrages.",
   },
@@ -41,6 +47,7 @@ export const projects: Project[] = [
     client: "Bachelor Informatique & Tech · 2025–2026",
     status: "completed",
     tags: ["Python", "pandas", "matplotlib", "scikit-learn", "Streamlit"],
+    image: "",
     description:
       "Analyses et prédictions des retards SNCF. Nettoyage de données, analyse exploratoire, visualisations, modèle prédictif ML et dashboard interactif Streamlit.",
   },
@@ -50,6 +57,7 @@ export const projects: Project[] = [
     client: "Bachelor Informatique & Tech · 2025–2026",
     status: "completed",
     tags: ["UI/UX", "Figma", "Product Design", "MVP"],
+    image: "",
     description:
       "Conception d'un MVP d'un reseau sociale pour les institutions pédagogiques. De la recherche utilisateur au prototype Figma.",
   },
@@ -59,6 +67,7 @@ export const projects: Project[] = [
     client: "Bachelor Informatique & Tech · 2025–2026",
     status: "completed",
     tags: ["React", "UI/UX", "Figma", "Hackathon"],
+    image: "",
     description:
       "Bibliothèque interactive écologique conçue lors d'un hackathon produit design. Renforcement des compétences React et UI/UX.",
   },
@@ -68,6 +77,7 @@ export const projects: Project[] = [
     client: "Bachelor Informatique & Tech · 2025–2026",
     status: "completed",
     tags: ["OWASP Top 10", "Pen Testing", "Sécurité"],
+    image: "",
     description:
       "CTF en cybersécurité. Apprentissage des vulnérabilités OWASP Top 10, pen testing et rédaction de rapports de résultats.",
   },
@@ -77,6 +87,7 @@ export const projects: Project[] = [
     client: "Bachelor Informatique & Tech · 2025–2026",
     status: "completed",
     tags: ["HTML", "CSS", "JS", "Node.js", "MySQL"],
+    image: "",
     description:
       "Application de gestion de tâches en HTML, CSS, JS avec backend Node.js et base de données MySQL.",
   },
