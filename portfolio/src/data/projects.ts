@@ -1,4 +1,9 @@
 import elizaImg from "../assets/eliza.png";
+import todoImg from "../assets/TODO.png";
+import yolwImg from "../assets/yolw.png";
+import tardisImg from "../assets/tardis.png";
+import nextImg from "../assets/next.png";
+import bookImg from "../assets/bookworm.png";
 
 export type Project = {
   id: number;
@@ -27,7 +32,7 @@ export const projects: Project[] = [
     client: "Bachelor Informatique & Tech · 2025–2026",
     status: "completed",
     tags: ["Python", "Machine Learning", "Data Analysis", "scikit-learn"],
-    image: "",
+    image: nextImg,
     description:
       "Perspectives commerciales d'un supermarché. Analyses prédictive, explicative, descriptive et prescriptive. Construction de modèles prédictifs et compréhension des tendances comportementales.",
   },
@@ -37,7 +42,7 @@ export const projects: Project[] = [
     client: "Bachelor Informatique & Tech · 2025–2026",
     status: "completed",
     tags: ["Python", "NLP", "TF-IDF", "LDA", "NER"],
-    image: "",
+    image: bookImg,
     description:
       "Outil CLI d'analyse de livres (Project Gutenberg) : diversité lexicale, topic modeling, reconnaissance d'entités, résumé automatique et similarité entreouvrages.",
   },
@@ -47,7 +52,7 @@ export const projects: Project[] = [
     client: "Bachelor Informatique & Tech · 2025–2026",
     status: "completed",
     tags: ["Python", "pandas", "matplotlib", "scikit-learn", "Streamlit"],
-    image: "",
+    image: tardisImg,
     description:
       "Analyses et prédictions des retards SNCF. Nettoyage de données, analyse exploratoire, visualisations, modèle prédictif ML et dashboard interactif Streamlit.",
   },
@@ -57,7 +62,7 @@ export const projects: Project[] = [
     client: "Bachelor Informatique & Tech · 2025–2026",
     status: "completed",
     tags: ["UI/UX", "Figma", "Product Design", "MVP"],
-    image: "",
+    image: yolwImg,
     description:
       "Conception d'un MVP d'un reseau sociale pour les institutions pédagogiques. De la recherche utilisateur au prototype Figma.",
   },
@@ -86,9 +91,9 @@ export const projects: Project[] = [
     title: "TODO List — Full-Stack",
     client: "Bachelor Informatique & Tech · 2025–2026",
     status: "completed",
-    tags: ["HTML", "CSS", "JS", "Node.js", "MySQL"],
-    image: "",
+    tags: ["REACT", "JS", "Node.js", "MySQL"],
+    image: todoImg,
     description:
-      "Application de gestion de tâches en HTML, CSS, JS avec backend Node.js et base de données MySQL.",
+      "Application de gestion de tâches en REACT avec backend Node.js et base de données MySQL.",
   },
 ];
