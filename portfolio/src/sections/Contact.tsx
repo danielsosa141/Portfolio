@@ -19,7 +19,10 @@ const Contact = () => {
           Paris, France
         </div>
         <div className="social-row">
-          <a href="" className="soc-link">
+          <a
+            href="www.linkedin.com/in/daniel-sosa-b9b113214"
+            className="soc-link"
+          >
             LinkedIn
           </a>
           <a
