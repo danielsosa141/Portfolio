@@ -38,7 +38,7 @@ const Navbar = () => {
         >
           {theme === "dark" ? "◑" : "◐"} {theme === "dark" ? "Light" : "Dark"}
         </button>
-        <a href="/public/Daniel Sosa Merino.pdf" download className="nav-cv">
+        <a href="/public/Daniel-Sosa-Merino.pdf" download className="nav-cv">
           ↓ Download CV
         </a>
       </div>
