@@ -37,7 +37,7 @@ const About = () => {
             ma formation.
           </p>
         </div>
-        <a href="/Daniel Sosa Merino.pdf" download className="btn-outline">
+        <a href="/Daniel-Sosa-Merino.pdf" download className="btn-outline">
           Download CV ↓
         </a>
       </div>
