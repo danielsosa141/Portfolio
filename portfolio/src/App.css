@@ -463,6 +463,16 @@ section {
   color: var(--fg2);
   margin-bottom: 16px;
 }
+.langues-wrap {
+  margin-top: 40px;
+}
+.langues-label {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--fg2);
+  margin-bottom: 16px;
+}
 .chips {
   display: flex;
   flex-wrap: wrap;

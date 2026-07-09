@@ -13,6 +13,8 @@ const skills = [
   "Linux",
 ];
 
+const langues = ["Français", "English", "Español"];
+
 const About = () => {
   return (
     <section id="about" className="about-section">
@@ -71,6 +73,17 @@ const About = () => {
             {skills.map((s) => (
               <span key={s} className="chip">
                 {s}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="langues-wrap">
+          <p className="langues-label">Langues</p>
+          <div className="chips">
+            {langues.map((l) => (
+              <span key={l} className="chip">
+                {l}
               </span>
             ))}
           </div>

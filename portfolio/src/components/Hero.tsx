@@ -11,7 +11,7 @@ const Hero = () => {
       </h1>
       <div className="hero-bottom">
         <p className="hero-desc">
-          <strong>Passioné et determiné</strong>
+          <strong>Passionné et déterminé</strong>
         </p>
         <div className="hero-badges">
           <span className="badge">
